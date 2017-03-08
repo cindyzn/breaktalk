@@ -77,7 +77,8 @@
   padding: 0 13px;
   float: left;
   line-height: 14px;
-  border-right: 1px solid #757575; }
+  border-right: 1px solid #757575;
+  font-size: 16px; }
 
 #nav li a:hover {
   text-decoration: underline;

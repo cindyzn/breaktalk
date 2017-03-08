@@ -1,0 +1,134 @@
+#container {
+  width: 100%;
+  height: auto; }
+
+.container {
+  width: 1170px;
+  height: auto;
+  margin: 0 auto;
+  padding: 10px 20px; }
+
+#index {
+  width: 1170px;
+  height: 20px;
+  margin-bottom: 10px; }
+
+#classify {
+  width: 1170px;
+  height: 21px;
+  margin: 10px 0 0 0;
+  line-height: 21px; }
+
+#script {
+  width: 80px;
+  float: left;
+  line-height: 21px; }
+
+#classify ul {
+  float: left; }
+
+#classify .active {
+  background-color: #cf0f25;
+  color: #fff;
+  padding: 0px 6px; }
+
+#classify ul li {
+  margin: 0 10px;
+  float: left;
+  font-size: 12px;
+  cursor: pointer; }
+
+#list {
+  width: 1170px;
+  height: auto; }
+  #list #goods {
+    width: 1170px;
+    height: 200px;
+    padding: 20px 10px;
+    border-bottom: 1px dashed #bcbcbc; }
+
+#goods .goods_img {
+  width: 200px;
+  width: 200px;
+  float: left; }
+  #goods .goods_img img {
+    width: 200px;
+    width: 200px;
+    margin-top: -5px; }
+
+#goods .goods_script {
+  width: 940px;
+  height: 200px;
+  padding: 0 0 0 30px;
+  float: left; }
+  #goods .goods_script .goods_script_text {
+    width: 700px;
+    height: 130px;
+    float: left;
+    padding-top: 10px; }
+    #goods .goods_script .goods_script_text h2 {
+      font-size: 20px;
+      color: #000;
+      padding-bottom: 10px; }
+      #goods .goods_script .goods_script_text h2 a:hover {
+        text-decoration: underline; }
+    #goods .goods_script .goods_script_text span {
+      color: darkred;
+      line-height: 30px; }
+  #goods .goods_script .goods_operate {
+    width: 206px;
+    height: 200px;
+    padding: 0 15px;
+    float: right; }
+    #goods .goods_script .goods_operate p {
+      color: darkred;
+      width: 100px;
+      height: 20px;
+      margin-left: 100px; }
+      #goods .goods_script .goods_operate p span {
+        color: darkred; }
+      #goods .goods_script .goods_operate p .fa {
+        color: darkred;
+        font-size: 20px; }
+    #goods .goods_script .goods_operate .price {
+      margin-top: 20px;
+      width: 230px; }
+      #goods .goods_script .goods_operate .price #money {
+        width: 110px;
+        height: 60px;
+        float: left;
+        font-size: 40px;
+        color: darkred;
+        font-weight: bold;
+        disolay: block;
+        margin-left: -20px;
+        margin-right: -5px; }
+      #goods .goods_script .goods_operate .price ul {
+        float: left;
+        margin-top: -1px; }
+        #goods .goods_script .goods_operate .price ul .prvprice {
+          text-decoration: line-through; }
+        #goods .goods_script .goods_operate .price ul .none {
+          text-decoration: none; }
+        #goods .goods_script .goods_operate .price ul .point, #goods .goods_script .goods_operate .price ul .zero {
+          color: darkred;
+          font-size: 18px; }
+        #goods .goods_script .goods_operate .price ul .zero {
+          font-weight: bold; }
+      #goods .goods_script .goods_operate .price .sub {
+        width: 200px;
+        height: 100px;
+        padding-top: 60px; }
+        #goods .goods_script .goods_operate .price .sub .buy, #goods .goods_script .goods_operate .price .sub .check {
+          width: 80px;
+          height: 30px;
+          background: darkred;
+          text-align: center;
+          line-height: 30px;
+          color: white;
+          font-weight: bold;
+          border-radius: 10px;
+          float: left;
+          margin-right: 15px; }
+
+/*# sourceMappingURL=cake.css.map */

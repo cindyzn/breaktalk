@@ -1,0 +1,159 @@
+@charset "utf-8";
+#container{
+    width:100%;
+    height:auto;
+}
+.container{
+    width: 1170px;
+    height: auto;
+    margin: 0 auto;
+    padding: 10px 20px;
+}
+#index{
+    width:1170px;
+    height:20px;
+    margin-bottom:10px;
+    
+}
+#classify {
+    width: 1170px;
+    height: 21px;
+    margin: 10px 0 0 0;
+    line-height: 21px;
+}
+#script {
+    width: 80px;
+    float: left;
+    line-height: 21px;
+}
+#classify ul {
+    float: left;
+}
+#classify .active {
+    background-color: #cf0f25;
+    color: #fff;
+    padding: 0px 6px;
+}
+#classify ul li {
+    margin: 0 10px;
+    float: left;
+    font-size: 12px;
+    cursor: pointer;
+}
+#list {
+    width: 1170px;
+    height: auto;
+    #goods {
+        width: 1170px;
+        height: 200px;
+        padding: 20px 10px;
+        border-bottom: 1px dashed #bcbcbc;
+    }
+}
+#goods .goods_img {
+    width: 200px;
+    width: 200px;
+    float: left;
+    img{
+        width: 200px;
+        width: 200px;
+        margin-top:-5px;
+    }
+}
+#goods .goods_script {
+    width: 940px;
+    height: 200px;
+    padding: 0 0 0 30px;
+    float: left;
+    .goods_script_text {
+        width: 700px;
+        height: 130px;
+        float: left;
+        padding-top:10px;
+        h2 {
+            font-size: 20px;
+            color: #000;
+            padding-bottom:10px;
+            a:hover{
+                text-decoration: underline;
+            }
+        }
+        span{
+            color:darkred;
+            line-height: 30px;
+        }
+    }
+    .goods_operate {
+        width: 206px;
+        height: 200px;
+        padding: 0 15px;
+        float: right;
+        p{
+            color:darkred;
+            width:100px;
+            height:20px;
+            margin-left:100px;
+            span{
+                color:darkred;
+            }
+            .fa{
+                color:darkred;
+                font-size:20px;
+            }
+        }
+        .price{
+            
+            margin-top:20px;
+            width:230px;
+            
+            #money{
+                width:110px;
+                height:60px;
+                float:left;
+                font-size:40px;
+                color:darkred;
+                font-weight: bold;
+                disolay:block;
+                margin-left:-20px;
+                margin-right:-5px;
+            }
+            ul{
+                float: left;
+                margin-top:-1px;
+                .prvprice{
+                    text-decoration: line-through;
+                }
+                .none{
+                    text-decoration: none;
+                }
+                .point,.zero{
+                    color:darkred;
+                    font-size:18px;
+                }
+                .zero{
+                    font-weight: bold;
+                }
+            }
+            .sub{
+                width:200px;
+                height:100px;
+                padding-top:60px;
+    
+                .buy,.check{
+                    width:80px;
+                    height: 30px;
+                    background:darkred;
+                    text-align: center;
+                    line-height: 30px;
+                    color:white;
+                    font-weight: bold;
+                    border-radius: 10px;
+                    float:left;
+                    margin-right:15px;
+                }
+            }
+        }
+    }
+}
+
+
