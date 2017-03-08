@@ -1,0 +1,160 @@
+@charset 'utf-8';
+/*...........................banner............................................*/
+#banner {
+  width: 100%;
+  height: 500px; }
+
+#banner .banner {
+  width: 1170px;
+  height: 500px;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden; }
+
+.banner #imgList {
+  height: 500px;
+  position: absolute;
+  left: 0;
+  top: 0; 
+  width:99999px;
+ 
+  }
+  
+  
+/*...........................container............................................*/
+
+#container{
+    width:100%;
+    height:530px;
+}
+.container{
+    width:1170px;
+    height:530px;
+    margin:10px auto;
+    position:relative;
+}
+#conLeft{
+    width:510px;
+    height:530px;
+    float:left;
+    
+}
+.container img{
+    width:100%;
+    height:100%;
+}
+
+.container #pop div{
+    position:absolute;
+    background:rgba(0,0,0,0.1);
+}
+#pop1{
+    width:510px;
+    height:530px;
+    top:0;
+    left:0;
+}
+#pop2{
+    width:650px;
+    height:200px;
+    left:520px;
+    top:0;
+}
+#pop3{
+     width:320px;
+    height:320px;
+    top:210px;
+    left:520px;
+}
+#pop4{
+    width:320px;
+    height:320px;
+    top:210px;
+    left:850px;
+}
+#pop .none{
+    display:none;   
+}
+#conRight{
+    width:650px;
+    height:530px;
+    margin-left:10px;
+    float:right;
+}
+#rgTop{
+    width:650px;
+    height:200px;
+    margin-bottom:10px;
+    
+}
+
+#rgRg,#rgLt{
+    width:320px;
+    height:320px;
+    
+}
+#rgLt{
+    float:left;
+}
+#rgLt{
+    float:right;
+}
+
+
+
+
+
+.banner #imgList li {
+  width: 1170px;
+  height: 500px;
+  float: left; }
+
+.banner #imgList li img {
+  width: 1170px;
+  height: 500px; }
+
+.banner #btnImg {
+  height: 80px;
+  width:660px;
+  position: absolute;
+  bottom: 10px;
+  left: 25%;
+  background:rgba(0,0,0,0.1);
+   display:none; }
+
+.banner #btnImg li {
+  float: left;
+  width: 150px;
+  height: 60px;
+  margin-top:10px;
+  margin-left: 10px; 
+  border:1px solid white;
+  }
+
+.banner #btnImg .active {
+  border: 2px solid darkgray; }
+
+.banner #btnImg li img {
+  width: 150px;
+  height: 60px; }
+
+.banner #btn {
+  height: 30px;
+  position: absolute;
+  bottom: 20px;
+  left: 40%;
+   }
+
+.banner #btn span {
+  float: left;
+  width: 30px;
+  height: 30px;
+  background: gray;
+  border-radius: 50%;
+  margin-right: 20px;
+  text-align: center;
+  line-height: 30px;
+  color: white; }
+
+.banner #btn .active {
+  background: red; }

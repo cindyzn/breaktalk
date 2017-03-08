@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+    *{
+    	padding:0;
+    	margin:0;
+    }
+    body{
+    	background:rgba(0,0,0,0.1)
+    }
+    #move{
+    	width:600px;
+    	height:544px;
+    	margin:0 auto;
+    	border:1px solid gray;
+    	margin:40px auto;
+    	background-image:url(img/bg.jpg);
+    }
+	#box{
+		width:600px;
+		height:500px;
+		overflow-y: auto;
+		overflow-x: hidden;
+	}
+	h2{
+		text-align: center;
+		line-height: 40px;
+		color:pink;
+	}
+	#text{
+		width:400px;
+		height:40px;
+		margin-left:140px;
+	}
+	
+	#btn{
+		width:50px;
+		height:40px;
+	}
+	#close{
+		width:40px;
+		height: 40px;
+		line-height: 40px;
+		text-align: center;
+		float:right;
+	}
+	
+	img{
+		width:50px;
+		height:40px;
+		margin-top:-20px;
+	}
+	span{
+		font-weight:bolder;
+		color:green;
+		margin-left:10px;
+		width:530px;
+	}
+	h4{
+		color:lightskyblue;
+		width:730px;
+		height:40px;
+		margin:10px 0 0 70px;
+	}
+	
+	
+    </style>
+</head>
+<body>
+<div id="move">
+	<div id="box">
+		<input type="button" id="close" value="关闭">
+		<h2>面包物语</h2>
+		<img src="img/logo.jpg"/>
+		<span>您好，欢迎来到面包物语，有什么可以帮助您的呢？</span>
+	</div>
+	<input type="text" id="text" placeholder="请输入您想要问的问题"/>
+	<input type="button" id="btn" value="发送"/>
+</div>
+	
+	<script src="js/jquery-1.8.3.min.js"></script>
+	
+	<script>
+		
+		$(function(){
+			$.getJSON("json/answer.json",personDate);
+			function personDate(data){
+				var str = data; 
+				//点击按钮发送
+				$("#btn").click(function(){
+					var oTxt = $("#text").val().trim();
+					if(oTxt !=""){
+						var oh = $("<h4>");
+						var img = $("<img>");
+						$(img).attr({"src":"img/logo.jpg"});
+						var op = $("<span>");
+						oh.html(oTxt);
+						op.html("您的问题太深奥了，我暂时还不知道呢");//非常重要
+						
+						$("#box").append(oh);
+						$("#box").append(img);
+						
+						$("#text").val("");
+						var hTxt = oh.html();
+						for(let i = 0;i< str.question.length;i++){
+							if(str.question[i].trim().search(hTxt)>=0){
+								op.html(str.answer[i]);
+							}
+							$("#box").append(op);
+						}
+					}
+					
+				});
+				//点击enter按钮发送
+				$('#text').bind('keydown',function(e){
+        		
+        			if(e.which== 13){
+        				var oTxt = $("#text").val().trim();
+					if(oTxt !=""){
+						var oh = $("<h4>");
+						var img = $("<img>");
+						$(img).attr({"src":"img/logo.jpg"});
+						var op = $("<span>");
+						oh.html(oTxt);
+						op.html("您的问题太深奥了，我暂时还不知道呢");//非常重要
+						
+						$("#box").append(oh);
+						$("#box").append(img);
+						
+						$("#text").val("");
+						var hTxt = oh.html();
+						for(let i = 0;i< str.question.length;i++){
+							if(str.question[i].trim().search(hTxt)>=0){
+								op.html(str.answer[i]);
+							}
+							$("#box").append(op);
+						}
+					}
+        			}
+				});
+			}
+			
+			$("#close").click(function(){
+				var com = confirm('是否要离开此对话框？');
+				if(com){
+					location.href = "http://127.0.0.1:8020/breaktalk/homepage.html";
+				}
+			})
+			
+			
+		})
+		
+	</script>
+
+<script>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	/*
+	//获取Id	
+	 function getId(str){
+	  return document.getElementById(str);
+	 }
+	  function create(str){
+	  return document.createElement(str);
+	 }
+	 function get(str){
+	  return document.getElementsByTagName(str);
+	 }
+	 
+	
+	getId("btn").onclick = function(){
+		
+		var h4 = create("h4");
+		var Otext = getId("text").value
+		h4.style = "max-width:150px;float:right;margin-right:30px;";
+		h4.style.background = "pink";
+		h4.innerHTML= Otext;
+		getId("box").appendChild(h4);
+		if(Otext.indexOf("在吗")!=-1){
+			getId("text").value = "";
+			var p= create("p");
+			getId("box").appendChild(p);
+			p.innerHTML = "What can I do for you ?";
+			
+		}else if(Otext.indexOf("中文")!=-1){
+			getId("text").value = "";
+			var p= create("p");
+			getId("box").appendChild(p);
+			p.innerHTML = "有什么需要为您效劳？";
+			
+		}else{
+			getId("text").value = "";
+			var p= create("p");
+			getId("box").appendChild(p);
+			p.innerHTML = "您需要升级!";
+			
+		}
+		
+		
+		
+		
+		
+	}
+	 */
+	 
+	
+</script>
+</body>
+</html>
