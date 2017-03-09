@@ -9,7 +9,7 @@
 		<link rel="stylesheet" href="css/scss/home.css" />
 		<link rel="stylesheet" href="css/scss/footer.css" />
 		<script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
-		<script type="text/javascript" src="js/autoplay.js" ></script>
+		<script type="text/javascript" src="js/js.js" ></script>
 	</head>
 	<body>
 				<!----------------------------------------nav 开始    ---------------------------------->
@@ -21,7 +21,7 @@
 			<div class="seat" id="city-list">
    			<div id="city"><i class="fa fa-map-marker"></i>北京</div>        
     			<div id="area">
-                	<span><a href="###" id="changeCity">西安</a></span>
+                	<span><a href="http://127.0.0.1:8020/breaktalk/homepage.html" id="changeCity">西安</a></span>
                 	<span>北京</span>
            		</div>	
 			</div>
@@ -37,7 +37,7 @@
             		<a href="http://www.wdmcake.cn/category-11.html">提货卡券</a>
            		</li>
         	    <li>
-            		<a href="http://www.wdmcake.cn/user.php">会员中心</a>
+            		<a href="http://127.0.0.1:8020/breaktalk/enter.html">会员中心</a>
             	</li>
         	    <li>
             		<a href="http://club.wdmcake.cn/forum.php" target="_blank">物语俱乐部</a>
@@ -55,8 +55,8 @@
 			<div id="topRight">
 				<span>客服热线 4001-170-170</span>
 				<p>
-					<a href="http://www.wdmcake.cn/user.php?act=register">注册</a>
-        			<a href="http://www.wdmcake.cn/user.php?act=login">登录</a>
+					<a href="http://127.0.0.1:8020/breaktalk/register.html">注册</a>
+        			<a href="http://127.0.0.1:8020/breaktalk/enter.html">登录</a>
         			<a href="http://www.wdmcake.cn/flow.php" class="car"><i class="fa fa-shopping-cart"></i></a>
         			<a href="http://www.wdmcake.cn/flow.php" id="count">0</a>
         			<a href="http://www.wdmcake.cn/help.php"><i class="fa fa-question-circle-o"></i></a>
@@ -191,7 +191,7 @@
 				</div>
 			</div>
 			<div id="footBtm">
-				<span>@2005-2018味多美版权所有，并保留所有权利。ICP备案证书号:京ICP备14006433号</span>
+				<span>@2005-2018面包物语版权所有，并保留所有权利。ICP备案证书号:京ICP备14006433号</span>
 				<a href="#"><img src="img/pass.png" </a>
 				<a href="#"><img src="img/cert.png" </a>
 			</div>
@@ -260,24 +260,8 @@
 		        moveImg(i); 
 		    }) 
 		   
-	/*。。。。。。。。。。。。。 	蒙层。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。*/   
-	    	$('.container #pop div').mouseenter(function(){ 
-		    	$("#pop div").eq(($(this).index())%4).addClass("none").siblings().removeClass('none');
-		    })
-	/*。。。。。。。。。。。。。 切换城市。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。*/  
-		
-		    $("#city").mouseenter(function(){
-		    	$("#area").css({"display":"block"});
-		    })
-		     $("#area").mouseleave(function(){
-		    	$("#area").css({"display":"none"});
-		    })
-		    $("#changeCity").click(function(){
-		    	var com = confirm('切换城市您的购物车将被清空!');
-				if(com){
-					location.href = "http://127.0.0.1:8020/breaktalk/homepage.html";
-				}
-		    })
+	
+	
 		    
 		})
 		

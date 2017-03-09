@@ -12,6 +12,9 @@
   width: 1170px;
   height: 20px;
   margin-bottom: 10px; }
+  #index a:hover {
+    text-decoration: underline;
+    color: darkred; }
 
 #classify {
   width: 1170px;
@@ -37,6 +40,9 @@
   float: left;
   font-size: 12px;
   cursor: pointer; }
+  #classify ul li a:hover {
+    text-decoration: underline;
+    color: darkred; }
 
 #list {
   width: 1170px;
@@ -130,5 +136,26 @@
           border-radius: 10px;
           float: left;
           margin-right: 15px; }
+
+.container #left {
+  width: 100px;
+  height: 200px;
+  position: fixed;
+  right: 0;
+  top: 200px;
+  padding-left: 10px; }
+  .container #left h2 {
+    border-bottom: 1px solid lightgray;
+    width: 70px;
+    padding-bottom: 5px;
+    line-height: 20px; }
+  .container #left a {
+    display: block;
+    line-height: 25px; }
+  .container #left a:hover {
+    text-decoration: underline;
+    color: darkred; }
+  .container #left #back {
+    display: none; }
 
 /*# sourceMappingURL=cake.css.map */

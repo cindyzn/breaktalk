@@ -1,0 +1,137 @@
+#container {
+  background-color: #bc002d;
+  height: 470px;
+  width: 100%;
+  box-sizing: border-box; }
+  #container .container {
+    width: 1100px;
+    position: relative;
+    margin: 0 auto;
+    padding-top: 40px;
+    height: 400px; }
+    #container .container #img {
+      float: left; }
+
+.container #user {
+  width: 344px;
+  height: 350px;
+  float: right;
+  position: relative;
+  background: white; }
+  .container #user #type {
+    width: 330px;
+    height: 50px; }
+    .container #user #type li {
+      line-height: 30px;
+      float: left;
+      margin: 10px 20px;
+      font-weight: bold; }
+  .container #user .form #normal {
+    width: 330px;
+    height: 290px;
+    margin-top: -10px; }
+    .container #user .form #normal #userName, .container #user .form #normal #userWord, .container #user .form #normal #btn {
+      margin: 10px 20px;
+      width: 290px;
+      height: 30px; }
+    .container #user .form #normal #chk {
+      margin-left: 20px; }
+    .container #user .form #normal #forget {
+      float: right;
+      margin-right: 30px; }
+    .container #user .form #normal #forget:hover, .container #user .form #normal a:hover {
+      text-decoration: underline;
+      color: darkred; }
+    .container #user .form #normal #btn {
+      background: #bc002d;
+      color: white;
+      font-weight: bold;
+      border: 1px solid lightgray; }
+    .container #user .form #normal .none {
+      padding-left: 20px;
+      line-height: 50px; }
+    .container #user .form #normal span {
+      display: block;
+      margin-left: 20px;
+      font-size: 14px; }
+  .container #user .form #tel {
+    width: 330px;
+    height: 290px;
+    margin-top: -10px;
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 10px; }
+    .container #user .form #tel #userName {
+      margin: 10px 20px;
+      width: 290px;
+      height: 30px; }
+    .container #user .form #tel #userWord {
+      width: 150px;
+      height: 27px;
+      margin: 10px 0px 0 20px;
+      float: left; }
+    .container #user .form #tel #get {
+      width: 110px;
+      height: 30px;
+      margin-top: 10px;
+      text-align: center;
+      line-height: 30px;
+      background: #bc002d;
+      color: white;
+      margin-right: 20px;
+      float: right; }
+    .container #user .form #tel a:hover {
+      text-decoration: underline;
+      color: darkred; }
+    .container #user .form #tel #btn {
+      background: #bc002d;
+      color: white;
+      font-weight: bold;
+      border: 1px solid lightgray;
+      margin: 20px 0 30px 20px;
+      width: 290px;
+      height: 30px; }
+    .container #user .form #tel .span1, .container #user .form #tel .span2 {
+      display: block;
+      margin-left: 20px;
+      line-height: 20px;
+      font-size: 14px;
+      width: 300px; }
+  .container #user .form #pass {
+    width: 200px;
+    height: 100px;
+    background: white;
+    border: 1px solid lightgray;
+    position: absolute;
+    display: none;
+    left: 120px;
+    top: 140px;
+    padding-left: 10px;
+    padding-top: 10px; }
+    .container #user .form #pass .pass {
+      width: 80px;
+      height: 30px;
+      float: left;
+      margin: 10px 0; }
+    .container #user .form #pass #show {
+      width: 100px;
+      height: 30px;
+      float: left;
+      margin: 10px 0;
+      color: white;
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 30px;
+      text-align: center;
+      background: #bc002d;
+      margin-left: 10px; }
+    .container #user .form #pass #sure {
+      width: 40px;
+      line-height: 20px;
+      text-align: center;
+      color: white;
+      background: #bc002d;
+      border: 1px solid lightgray; }
+
+/*# sourceMappingURL=enter.css.map */

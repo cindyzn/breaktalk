@@ -144,7 +144,7 @@
 			}
 			
 			$("#close").click(function(){
-				var com = confirm('是否要离开此对话框？');
+				var com = confirm('离开此对话框会跳转到首页，是否离开？');
 				if(com){
 					location.href = "http://127.0.0.1:8020/breaktalk/homepage.html";
 				}
@@ -154,76 +154,5 @@
 		})
 		
 	</script>
-
-<script>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	/*
-	//获取Id	
-	 function getId(str){
-	  return document.getElementById(str);
-	 }
-	  function create(str){
-	  return document.createElement(str);
-	 }
-	 function get(str){
-	  return document.getElementsByTagName(str);
-	 }
-	 
-	
-	getId("btn").onclick = function(){
-		
-		var h4 = create("h4");
-		var Otext = getId("text").value
-		h4.style = "max-width:150px;float:right;margin-right:30px;";
-		h4.style.background = "pink";
-		h4.innerHTML= Otext;
-		getId("box").appendChild(h4);
-		if(Otext.indexOf("在吗")!=-1){
-			getId("text").value = "";
-			var p= create("p");
-			getId("box").appendChild(p);
-			p.innerHTML = "What can I do for you ?";
-			
-		}else if(Otext.indexOf("中文")!=-1){
-			getId("text").value = "";
-			var p= create("p");
-			getId("box").appendChild(p);
-			p.innerHTML = "有什么需要为您效劳？";
-			
-		}else{
-			getId("text").value = "";
-			var p= create("p");
-			getId("box").appendChild(p);
-			p.innerHTML = "您需要升级!";
-			
-		}
-		
-		
-		
-		
-		
-	}
-	 */
-	 
-	
-</script>
 </body>
 </html>

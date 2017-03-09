@@ -13,6 +13,10 @@
     width:1170px;
     height:20px;
     margin-bottom:10px;
+    a:hover{
+        text-decoration: underline;
+        color:darkred;
+    }
     
 }
 #classify {
@@ -25,6 +29,7 @@
     width: 80px;
     float: left;
     line-height: 21px;
+    
 }
 #classify ul {
     float: left;
@@ -39,6 +44,10 @@
     float: left;
     font-size: 12px;
     cursor: pointer;
+    a:hover{
+        text-decoration: underline;
+        color:darkred;
+    }
 }
 #list {
     width: 1170px;
@@ -156,4 +165,28 @@
     }
 }
 
-
+.container #left{
+    width:100px;
+    height:200px;
+    position: fixed;
+    right:0;
+    top:200px;
+    padding-left:10px;
+    h2{
+        border-bottom:1px solid lightgray;
+        width:70px;
+        padding-bottom: 5px;
+        line-height: 20px;
+    }
+    a{
+        display:block;
+        line-height: 25px;;
+    }
+    a:hover{
+        text-decoration: underline;
+        color:darkred;
+    }
+    #back{
+        display:none;
+    }
+}
