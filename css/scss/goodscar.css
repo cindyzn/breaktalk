@@ -1,0 +1,53 @@
+#container {
+  width: 100%;
+  height: auto;
+  background-color: #fff; }
+
+.container {
+  width: 1170px;
+  height: auto;
+  margin: 0 auto;
+  padding: 10px 15px; }
+
+.container #step {
+  width: 900px;
+  height: 55px;
+  margin: 30px auto 0 auto; }
+  .container #step .step1 {
+    width: 90px;
+    padding: 0 0 0 120px;
+    background: url(img/step1.bmp) no-repeat 0 -165px; }
+
+.order_cart_main .order_step .step2 {
+  width: 144px;
+  margin: 0 0 0 80px;
+  padding: 0 0 0 120px;
+  background: url(img/step2.bmp) no-repeat 0 -55px; }
+
+.order_cart_main .order_step .step3 {
+  width: 108px;
+  margin: 0 0 0 80px;
+  padding: 0 0 0 120px;
+  background: url(img/step3.bmp) no-repeat 0 -110px; }
+
+.order_cart_main .order_info {
+  width: 970px;
+  height: auto;
+  padding: 50px 0 0 0; }
+
+.order_cart_main .order_operate {
+  width: 1170px;
+  height: auto;
+  padding: 10px 0; }
+
+.order_cart_main .order_operate .order_text {
+  width: 1170px;
+  height: auto;
+  margin: 10px 0; }
+
+.order_cart_main .order_operate .order_text .cost {
+  margin: 30px 0 20px 0;
+  text-align: right;
+  color: #000; }
+
+/*# sourceMappingURL=goodscar.css.map */

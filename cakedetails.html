@@ -10,6 +10,7 @@
 		<link rel="stylesheet" href="css/scss/cakedetails.css" />
 		<script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
 		<script type="text/javascript" src="js/js.js" ></script>
+		<script type="text/javascript" src="js/goodscar.js" ></script>
 		<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"slide":{"type":"slide","bdImg":"4","bdPos":"left","bdTop":"100"}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
 	</head>
 	<body>
@@ -17,7 +18,7 @@
 	<div id="top">
 		<div class="top">
 			<div id="logo">
-				<a href="http://www.wdmcake.cn/" name="" id="logimg"><img src="img/logo.jpg"></a>
+				<a href="http://127.0.0.1:8020/breaktalk/homepage.html" name="" id="logimg"><img src="img/logo.jpg"></a>
 			</div>
 			<div class="seat" id="city-list">
    			<div id="city"><i class="fa fa-map-marker"></i>西安</div>        
@@ -114,19 +115,75 @@
 					<span style="color:#bc002d">订购提示：请您提前一天12:00前预订 </span>
 				</div>
 				<div class = "price_cen">
-					<p><span style="font-size:30px;font-weight:bold">￥158.00/</span><span style="font-size:20px";>Φ15cm</span></p>
-					<p><span style="font-size:30px;font-weight:bold">￥198.00/</span><span style="font-size:20px">Φ20cm</span></p><span></span>
-					<p><span style="font-size:30px;font-weight:bold">￥258.00/</span><span style="font-size:20px">Φ25cm</span></p><span></span>
-					<p><span style="font-size:30px;font-weight:bold">￥318.00/</span><span style="font-size:20px">Φ30cm</span></p><span></span>
+					<p><span>￥</span><em class="em1">158</em><span>.00/</span><em style="font-size:20px" class="em2">Φ15cm</em></p>
 				</div>
 				<ul class="price_right">
 					<li class="color">Φ15cm</li>
 					<li>Φ20cm</li>
 					<li>Φ25cm</li>
 					<li>Φ30cm</li>
+					<input type="button" id="min" value="-"/>
+					<input type="text" id="opera" value="1"/>
+					<input type="button" id="max" value="+"/>
+					<span id="add">加入购物车</span>
+				</ul>
+			</div>
+			<div class="container_good">
+				<ol id="sales" style="list-style:disc">
+					<h2 class="tl">TOP10  销量排行</h2><hr style="width:350px;" />
+					<li>
+						<span>1</span>
+						<a href='http://127.0.0.1:8020/breaktalk/cakedetails.html'>（官网版）经典黑森林蛋糕<img src="img/forest.jpg" class="show"/></a>
+					</li>
+					<li><span>2</span><a href="###">（官网版）女王巧克力蛋糕<img src="img/queen.jpg" /></a></li>
+					<li><span>3</span><a href="###">（官网版）缤纷盛果蛋糕<img src="img/fruit.jpg"/></a></li>
+					</li><li><span>4</span><a href="###">（官网版）经典天然蛋糕<img src="img/natural.jpg"/></a></li>
+					</li><li><span>5</span><a href="###">（官网版）经典天然蛋糕<img src="img/natural.jpg"/></a></li>
+					</li><li><span>6</span><a href="###">（官网版）经典天然蛋糕<img src="img/natural.jpg"/></a></li>
+					</li><li><span>7</span><a href="###">（官网版）女王巧克力蛋糕<img src="img/queen.jpg" /></a></li>
+					</li><li><span>8</span><a href="###">（官网版）经典天然蛋糕<img src="img/natural.jpg"/></a></li>
+					</li><li><span>9</span><a href="###">（官网版）经典天然蛋糕<img src="img/natural.jpg"/></a></li>
+					</li><li><span>10</span><a href="###">（官网版）缤纷盛果蛋糕<img src="img/fruit.jpg"/></a></li>
+				</ol>
+				<ul id="good">
+					<p class="tl">产品属性</><hr style="width:770px;" />
+					<li>
+						<span>蛋糕类别：巧克力风味蛋糕</span>
+						<span class="br">适合人群：各类人群（建议婴幼儿、老人、病患者谨慎食用）</span>
+						<span>保存条件：0-7℃冷藏2天（建议当天食用）</span>
+						<span class="br">特色原料：使用法国或英国天然稀奶油、进口高脂可可粉</span>
+					</li>
+					<p class="tr">产品规格及配套餐具<p/><hr style="width:770px;" />
+					<li>
+						<img src="img/table.jpg" class="table"/>
+					</li class="span">
+					<p class="tr">温馨提示</p><hr style="width:770px"; />
+					<li>
+						<ul class="li_ul">
+							<li>1、 为保证您能及时收到订单商品，天然奶油蛋糕30cm（含）以下规格需要您至少提前4小时预订，30cm以上规格及大型庆典蛋糕，需要您提前两天12：00前预订，慕斯蛋糕、乳酪蛋糕、巧克力风味蛋糕及糖醇坯蛋糕，需要您提前一天12:00前预订，特殊款蛋糕预订时间以商品页面提示为准。</li>
+							<li>2、 面包物语官网及微信端可24小时自助在线订购，当您操作不便时，您可以拨打我们的客服电话，将您想购买的商品名称、规格、数量、详细配送地址、配送时间、收货人及要求等告诉我们的客服人员，客服人员会帮您完成商品订购。
+		   							客服热线电话：4001-170-170（服务时间09:00-21:00）
+							</li>
+							<li>3、 目前支持在线支付宝、网银及微信支付，货到现金付款、门店现金/银联/面包物语充值卡等付款方式。</li>
+							<li>4、 配送范围及费用：上海市距门店5公里范围内免费配送；距门店5-10公里范围内收取20元配送费；距门店10公里范围外仅支持门店自提，暂不提供配送服务。</li>
+							<li>5、 大型蛋糕（直径40cm以上或多层蛋糕）/西点满2000元，上海市内免费配送。</li>
+							<li>6、 配送时间：每日10:00-20:00，根据订单指定时间准时送达。</li>
+							<li>7、 蛋糕价格变动以官网及门店价格为准，部分产品采用应季水果点缀，会随季节的变化有所调整，产品以实物为准。由于供货原因全球选购的原料产地会有所变化。</li>
+							<li>8、 面包物语官网代金券仅支持在线支付时（支付宝支付、网银支付、微信支付）使用。</li>
+							<li>9、 面包物语可提供蛋糕、粽子、月饼提货卡等产品的企事业单位团体订购及企业福利外包服务，期待与广大合作伙伴开放合作。 咨询热线：021-24282668</li>
+						</ul>
+					</li>
 				</ul>
 			</div>
 			
+			<div id="disallow_min">
+				<p>此商品最小购买数量为1</p>
+				<input type="button" class="sure" value="确定"/>
+			</div>
+			<div id="disallow_max">
+				<p>此商品最d大购买数量为199</p>
+				<input type="button" class="sure" value="确定"/>
+			</div>
 			<div id="left">
 				<h2>蛋糕口味</h2>
 				<a href="###" target="_blank">天然奶油</a>
@@ -187,18 +244,7 @@
 	<script>
 		$(function(){		
 		console.log(location.href)
-		//选项卡
-		$("#card li").mouseover(function(){
-			$("#card li").css("cursor","pointer");
-			$("#img img").eq($(this).index()).css({"display":"block"}).siblings().css({"display":"none"});
-			$("#card li").eq($(this).index()).addClass("border").siblings().removeClass("border");
-		})
 		
-		$(".price_right li").mouseover(function(){
-			$(".price_right li").css("cursor","pointer");
-			$(".price_cen p").eq($(this).index()).css({"display":"block"}).siblings().css({"display":"none"});
-			$(".price_right li").eq($(this).index()).addClass("color").siblings().removeClass("color");
-		})
 	});
 	</script>
 	</body>

@@ -16,7 +16,7 @@
 	<div id="top">
 		<div class="top">
 			<div id="logo">
-				<a href="http://www.wdmcake.cn/" name="" id="logimg"><img src="img/logo.jpg"></a>
+				<a href="http://127.0.0.1:8020/breaktalk/homepage.html" name="" id="logimg"><img src="img/logo.jpg"></a>
 			</div>
 			<div class="seat" id="city-list">
    			<div id="city"><i class="fa fa-map-marker"></i>西安</div>        
@@ -31,7 +31,7 @@
        				<a href="http://127.0.0.1:8020/breaktalk/homepage.html">首页</a>
            		</li>
         	    <li class="navlicake">
-            		<a href="">蛋糕</a>
+            		<a href="http://127.0.0.1:8020/breaktalk/cake.html">蛋糕</a>
             	</li>
         	    <li>
             		<a href="http://www.wdmcake.cn/category-11.html">提货卡券</a>
@@ -149,6 +149,14 @@
 		$(function(){
 			/*。。。。。。。。。。。。。本页面地址。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。*/  
 			console.log(location.href)
+		//验证密码
+			$('#userName').blur(function(){
+				var fistPass = $('#userName').val();
+				var reg = /^1\d{10}$/; 
+				if(!reg.test(fistPass)){
+					alert("手机号码格式有误");
+				}
+			})
 		})
 	
 		

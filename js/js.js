@@ -14,19 +14,18 @@
 					return false;
 				}
 		    })
-		    
+//首页信息
 		    /*。。。。。。。。。。。。。 	container蒙层。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。*/   
 	    	$('.container #pop div').mouseenter(function(){ 
 		    	$("#pop div").eq(($(this).index())%4).addClass("none").siblings().removeClass('none');
 		    })
 		    
-		    
+//注册和登录    
 		    /*。。。。。。。。。。。。。 切换登录界面。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。*/  
 			$("#type li").click(function(){
 				$("#type li").css("cursor","pointer");
 				$("#hide li").eq($(this).index()).css({"display":"block"}).siblings().css({"display":"none"});
 			})
-			
 			
 		    
 			//显示验证码
@@ -74,8 +73,9 @@
 				if(fistPass != secondPass){
 				alert("确认密码错误");
 				}
-			})
 			
+			})
+//cholatecake信息
 			/*---------------蛋糕放大------------------------------------------------------*/
 			$(".goods_img img").mouseenter(function(){
 				$(this).animate({"width":"220px","height":"220px"},500);
@@ -85,10 +85,38 @@
 		
 			})
 			
+//cakedetails的js信息
+			//选项卡
+		//商品左侧详情
+		$("#card li").mouseover(function(){
+			$("#card li").css("cursor","pointer");
+			$("#img img").eq($(this).index()).css({"display":"block"}).siblings().css({"display":"none"});
+			$("#card li").eq($(this).index()).addClass("border").siblings().removeClass("border");
+		})
+		/*
+		//商品规格
+		$(".price_right li").mouseover(function(){
+			$(".price_right li").css("cursor","pointer");
+			//商品价格
+			var arr = [158,228,308,409];
+			$(".price_cen p .em2").html($(this).html());
+			$(".price_cen p .em1").html(arr[$(this).index()]);
+			$(".price_right li").eq($(this).index()).addClass("color").siblings().removeClass("color");
+		})
+		*/
+		//商品右侧排行榜,鼠标放开和移上去
+		
+		$("#sales li").mouseleave(function(){
+			$("#sales li a img").eq($(this).index()-2).removeClass("show");
+		})
+		$("#sales li").mouseenter(function(){
+			$("#sales li a img").eq($(this).index()-2).addClass("show");
+		})
+			
 		})
 		
 
-		/*-------------------返回顶部------------------------------------------------*/
+/*-------------------返回顶部------------------------------------------------*/
 		window.onscroll = function(){
 			var scrollTop = document.body.scrollTop ||document.documentElementscrollTop;
 			if(scrollTop>300){
