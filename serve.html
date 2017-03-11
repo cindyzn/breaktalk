@@ -6,13 +6,15 @@
 		<link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 		<link rel="stylesheet" href="css/scss/public.css" />
 		<link rel="stylesheet" href="css/scss/nav.css" />
-		<link rel="stylesheet" href="css/scss/register.css" />
+		<link rel="stylesheet" href="css/scss/cake.css" />
 		<link rel="stylesheet" href="css/scss/footer.css" />
 		<script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
 		<script type="text/javascript" src="js/js.js" ></script>
+		<script type="text/javascript" src="js/scroll.js" ></script>
+		<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"slide":{"type":"slide","bdImg":"4","bdPos":"left","bdTop":"100"}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
 	</head>
 	<body>
-				<!----------------------------------------nav 开始    ---------------------------------->
+		<!----------------------------------------nav 开始    ---------------------------------->
 	<div id="top">
 		<div class="top">
 			<div id="logo">
@@ -31,7 +33,7 @@
        				<a href="http://127.0.0.1:8020/breaktalk/homepage.html">首页</a>
            		</li>
         	    <li class="navlicake">
-            		<a href="http://127.0.0.1:8020/breaktalk/cake.html">蛋糕</a>
+            		<a href="">蛋糕</a>
             	</li>
         	    <li>
             		<a href="http://www.wdmcake.cn/category-11.html">提货卡券</a>
@@ -70,34 +72,33 @@
 	<div id="trim" style="height:96px;width:1170px"></div>
 		
 	<!----------------------------------------nav 完成    ---------------------------------->
+		
 	<div id="container">
 		<div class="container">
-			<img src="img/bg1.jpg" id="img">
-			<div id="user">
-				<h2>用户注册</h2>
-				<form class="form" action="" name="form">
-					<input type="text" placeholder="请输入您的手机号" id="userName"/>
-					<input type="password" placeholder="请输入短信验证码" id="telWord"/>
-					<a href="###" id="get" >获取验证码</a>
-					<input type="password" placeholder="密码由6-12位数字字母或者下划线" id="userWord"/>
-					<input type="password" placeholder="请再次输入密码" id="sureWord"/>
-					<input type="button" id="btn" value="注册"/>
-					<span>温馨提示：</span>
-					<span>成功注册会员，登录后首次完善个人信息，即可获赠官网会员20积分</span>
-						
-					<div id="pass">
-						<p>请输入以下验证码</p>
-						<input type="text" class="pass" placeholder="验证码" /><a id="show" href="###">a1ce</a>
-						<input type="button" value="确认" id="sure" />
-					</div>
-					
-				</form>
+			<div id="index">
+				当前位置: <a href="http://127.0.0.1:8020/breaktalk/homepage.html">首页</a>&gt; 
+				<a href="###" style="color:darkred;font-weight: bold;">企业服务</a>
+			</div>
+			<ul class="left">
+				<h2>了解面包物语</h2>
+				<li class="active">联系面包物语</li>
+				<li>企业服务</li>
+				<li>面包物语简介</li>
+			</ul>
+			<div class="right">
+				<div>
+					<h2 class="hr">联系面包物语</h2><hr style="width:1170px;" />
+					<p>北京味多美食品有限责任公司<br/>地址：北京市海淀区西直门北大街32号枫蓝国际中心B座7层<br/>  
+邮编：100082
+电话：4001-170-170</p>
+				</div>
+				<div></div>
+				<div></div>
 			</div>
 			
+			
+		</div>
 	</div>
-
-	</div>
-	
 	<!---------------------------------------container 完成    ---------------------------------->
 	<div id="footer">
 		<div class="footer">
@@ -142,26 +143,11 @@
 	</div>
 	<!---------------------------------------footer 完成    ---------------------------------->
 	
-	
-	
-	
-	<script> 
+	<script>
 		$(function(){
-			/*。。。。。。。。。。。。。本页面地址。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。*/  
 			console.log(location.href)
-		//验证密码
-			$('#userName').blur(function(){
-				var fistPass = $('#userName').val();
-				var reg = /^1\d{10}$/; 
-				if(!reg.test(fistPass)){
-					alert("手机号码格式有误");
-				}
-			})
 		})
 	
-		
-		
-		
 	</script>
 	
 	</body>

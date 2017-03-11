@@ -157,12 +157,12 @@
   .container #price .color {
     color: #bc002d;
     border: 1px solid #bc002d; }
-  .container #price #min, .container #price #max {
+  .container #price .min, .container #price .max {
     width: 20px;
     height: 20px;
     margin: 15px 5px;
     text-align: center; }
-  .container #price #opera {
+  .container #price .opera {
     width: 40px;
     text-align: center; }
   .container #price #add {
@@ -273,5 +273,8 @@
     margin-bottom: 20px;
     padding-top: 10px;
     color: #bc002d; }
+
+.container #add:hover {
+  cursor: pointer; }
 
 /*# sourceMappingURL=cakedetails.css.map */
