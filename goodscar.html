@@ -6,11 +6,13 @@
 		<link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 		<link rel="stylesheet" href="css/scss/public.css" />
 		<link rel="stylesheet" href="css/scss/nav.css" />
-		<link rel="stylesheet" href="css/scss/footer.css" />
 		<link rel="stylesheet" href="css/scss/goodscar.css" />
+		<link rel="stylesheet" href="css/scss/footer.css" />
 		<script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
-		<script type="text/javascript" src="js/js.js" ></script>
-		<script type="text/javascript" src="js/goodscar.js" ></script>
+		<script type="text/javascript" src="js/js.js"></script>
+		<script type="text/javascript" src="js/goodscar.js"></script>
+		<script type="text/javascript" src="js/cookie.js" ></script>
+		
 		<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"slide":{"type":"slide","bdImg":"4","bdPos":"left","bdTop":"100"}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
 	</head>
 	<body>
@@ -18,28 +20,28 @@
 	<div id="top">
 		<div class="top">
 			<div id="logo">
-				<a href="http://127.0.0.1:8020/breaktalk/homepage.html" name="" id="logimg"><img src="img/logo.jpg"></a>
+				<a href="http://localhost/breaktalk/homepage.html" name="" id="logimg"><img src="img/logo.jpg"></a>
 			</div>
 			<div class="seat" id="city-list">
    			<div id="city"><i class="fa fa-map-marker"></i>西安</div>        
     			<div id="area">
-                	<span><a href="http://127.0.0.1:8020/breaktalk/homepagecity.html" id="changeCity">北京</a></span>
+                	<span><a href="http://localhost/breaktalk/homepagecity.html" id="changeCity">北京</a></span>
                 	<span>西安</span>
            		</div>	
 			</div>
 			
 			<ul id="nav">
            		<li>
-       				<a href="http://127.0.0.1:8020/breaktalk/homepage.html">首页</a>
+       				<a href="http://localhost/breaktalk/homepage.html">首页</a>
            		</li>
         	    <li class="navlicake">
-            		<a href="http://127.0.0.1:8020/breaktalk/cake.html">蛋糕</a>
+            		<a href="http://localhost/breaktalk/cake.html">蛋糕</a>
             	</li>
         	    <li>
             		<a href="http://www.wdmcake.cn/category-11.html">提货卡券</a>
            		</li>
         	    <li>
-            		<a href="http://127.0.0.1:8020/breaktalk/enter.html">会员中心</a>
+            		<a href="http://localhost/breaktalk/enter.html">会员中心</a>
             	</li>
         	    <li>
             		<a href="http://club.wdmcake.cn/forum.php" target="_blank">物语俱乐部</a>
@@ -51,18 +53,18 @@
             		<a href="http://www.wdmcake.cn/exchange.php" target="_blank">积分换礼</a>
             	</li>
         	    <li class="none">
-            		<a href="http://www.wdmcake.cn/about.php?id=53">企业服务</a>
+            		<a href="http://localhost/breaktalk/serve.html">企业服务</a>
             	</li>
 			</ul>
 			<div id="topRight">
 				<span>客服热线 4001-170-170</span>
 				<p>
-					<a href="http://127.0.0.1:8020/breaktalk/register.html">注册</a>
-        			<a href="http://127.0.0.1:8020/breaktalk/enter.html">登录</a>
-        			<a href="http://127.0.0.1:8020/breaktalk/goodscar.html" class="car"><i class="fa fa-shopping-cart"></i></a>
-        			<a href="http://127.0.0.1:8020/breaktalk/goodscar.html" id="count">0</a>
+					<a href="http://localhost/breaktalk/register.html" class="into">注册</a>
+        			<a href="http://localhost/breaktalk/enter.html" class="exit">登录</a>
+        			<a href="http://localhost/breaktalk/goodscar.html" class="car"><i class="fa fa-shopping-cart"></i></a>
+        			<a href="http://localhost/breaktalk/goodscar.html" id="count">0</a>
         			<a href="http://www.wdmcake.cn/help.php"><i class="fa fa-question-circle-o"></i></a>
-        			<a href="http://127.0.0.1:8020/breaktalk/answer.html"><i class="fa fa-qq"></i></a>
+        			<a href="http://localhost/breaktalk/answer.html"><i class="fa fa-qq"></i></a>
 				</p>
         		
         		
@@ -79,74 +81,81 @@
             	<div class="step1">我的购物车</div>
                 <div class="step2">填写核对订单信息</div>
                 <div class="step3">成功提交订单</div>
-            </div>
-            
+           </div>
             
             <h2 class="hr">我的购物车</h2><hr style="width:1170px;" />
-            <div id="table" >
-            	<table id="mycar"  width="1170px" height="auto">
-	            	<tr class="name">
-	            		<td class="name_text">商品名称</td>
-	            		<td>规格</td>
-	            		<td>数量</td>
-	            		<td>单价（元）</td>
-	            		<td>小计</td>
-	            		<td>操作</td>
-	            		
-	            	</tr>
-	            	<tr class="size">
-	            		<td class="name_img">
-	            			<a href="cakedetails.html"><img src="img/forest.jpg" />
-	            				<span>（官网版）经典黑森林蛋糕</span> 
-	            			</a>
-	            		</td>
-	            		<td>Φ15cm</td>
-	            		<td class="math">
-	            			<input type="button" class="min" value="-"/>
-							<input type="text" class="opera" value="1"/>
-							<input type="button" class="max" value="+"/>
-	            		</td>
-	            		<td>
-	            			<p><span>￥</span><em class="em1">158</em><span>.00</span></p>
-	            		</td>
-	            		<td>
-	            			<p><span>￥</span><em class="em3">158</em><span>.00</span></p>
-	            		</td>
-	            		<td>
-	            			<span class="delete"><i class="fa fa-trash-o"></i></span>
-	            			<span class="collect"><i class="fa fa-heart-o"></i></span>
-	            		</td>
-	            	</tr>
-	            	<tr class="size">
-	            		<td class="name_img">
-	            			<a href="cakedetails.html"><img src="img/forest.jpg" />
-	            				<span>（官网版）经典黑森林蛋糕</span> 
-	            			</a>
-	            		</td>
-	            		<td>Φ15cm</td>
-	            		<td class="math">
-	            			<input type="button" class="min" value="-"/>
-							<input type="text" class="opera" value="1"/>
-							<input type="button" class="max" value="+"/>
-	            		</td>
-	            		<td>
-	            			<p><span>￥</span><em class="em1">158</em><span>.00</span></p>
-	            		</td>
-	            		<td>
-	            			<p><span>￥</span><em class="em3">158</em><span>.00</span></p>
-	            		</td>
-	            		<td>
-	            			<span class="delete"><i class="fa fa-trash-o"></i></span>
-	            			<span class="collect"><i class="fa fa-heart-o"></i></span>
-	            		</td>
-	            	</tr>
-            	</table>
-            </div>
+            <div class="catbox">
+			    <table id="cartTable">
+			        <thead>
+				        <tr>
+				            <th><label><input class="check-all check" type="checkbox"/>&nbsp;&nbsp;全选</label></th>
+				            <th>商品</th>
+				            <th>单价/规格</th>
+				            <th>数量</th>
+				            <th>小计</th>
+				            <th>操作</th>
+				        </tr>
+			        </thead>
+			        <tbody>
+				        <tr>
+				            <td class="checkbox"><input class="check-one check" type="checkbox"/></td>
+				            <td class="goods"><img src="img/forest.jpg" alt=""/><a href="http://localhost/breaktalk/cakedetails.html">（官网版）经典黑森林蛋糕</a></td>
+				            <td class="price">158.00/Φ15cm</td>
+				            <td class="count"><span class="reduce">-</span>
+				                <input class="count-input" type="text" value="1"/>
+				                <span class="add">+</span></td>
+				            <td class="subtotal">158.00</td>
+				            <td class="operation"><span class="delete">删除</span></td>
+				        </tr>
+				        <tr>
+				            <td class="checkbox"><input class="check-one check" type="checkbox"/></td>
+				            <td class="goods"><img src="img/flower.jpg" alt=""/><a href="http://localhost/breaktalk/cake.html">花漾年华蛋糕</span></td>
+				            <td class="price">168.00/Φ20cm</td>
+				            <td class="count"><span class="reduce"></span>
+				                <input class="count-input" type="text" value="1"/>
+				                <span class="add">+</span></td>
+				            <td class="subtotal">168.00</td>
+				            <td class="operation"><span class="delete">删除</span></td>
+				        </tr>
+				        <tr>
+				            <td class="checkbox"><input class="check-one check" type="checkbox"/></td>
+				            <td class="goods"><img src="img/fruit.jpg" alt=""/><a href="http://localhost/breaktalk/cake.html">（官网版）缤纷盛果蛋糕 Profusion Fruit</a></td>
+				            <td class="price">198.00/Φ20cm</td>
+				            <td class="count"><span class="reduce"></span>
+				                <input class="count-input" type="text" value="1"/>
+				                <span class="add">+</span></td>
+				            <td class="subtotal">198.00</td>
+				            <td class="operation"><span class="delete">删除</span></td>
+				        </tr>
+				        <tr>
+				            <td class="checkbox"><input class="check-one check" type="checkbox"/></td>
+				            <td class="goods"><img src="img/queen.jpg" alt=""/><a href="http://localhost/breaktalk/cake.html">（官网版）女王巧克力蛋糕 Queen Chocolate</a></td>
+				            <td class="price">158.00/Φ20cm</td>
+				            <td class="count"><span class="reduce"></span>
+				                <input class="count-input" type="text" value="1"/>
+				                <span class="add">+</span></td>
+				            <td class="subtotal">158</td>
+				            <td class="operation"><span class="delete">删除</span></td>
+				        </tr>
+			        </tbody>
+			    </table>
+			    <div class="foot" id="foot">
+			        <label class="fl select-all"><input type="checkbox" class="check-all check"/>&nbsp;&nbsp;全选</label>
+			        <a class="fl delete" id="deleteAll" href="javascript:;">删除</a>
+			        <input type="hidden" id="cartTotalPrice"/>
+			        <div class="fr total">合计：￥<span id="priceTotal">0.00</span></div>
+			        <div class="fr selected" id="selected">已选商品<span id="selectedTotal">0</span>件<span
+			                class="arrow up">︽</span><span class="arrow down">︾</span>
+			        </div>
+			        <div class="selected-view">
+			            <div id="selectedViewList" class="clearfix">
+			                <div><img src="img/forest.jpg"><span>取消选择</span></div>
+			            </div>
+			            <span class="arrow">◆<span>◆</span></span>
+			        </div>
+			   	</div>
+			</div>
             
-            
-           
-	            	
-           
             
             <div id="sub">
             	<div class="sub_left">
@@ -158,14 +167,7 @@
             </div>
             
    
-        	<div id="disallow_min">
-				<p>此商品最小购买数量为1</p>
-				<input type="button" class="sure" value="确定"/>
-			</div>
-			<div id="disallow_max">
-				<p>此商品最d大购买数量为199</p>
-				<input type="button" class="sure" value="确定"/>
-			</div>
+        	
 			
 		</div>
 	</div>
@@ -186,13 +188,13 @@
 					<p><a href="###">提货卡/积分卡查询</a></p>
 				</div>
 				<div id="three">
-					<h3><a href="###">关于我们</a></h3>
-					<p><a href="###">了解面包物语</a></p>
+					<h3><a href="http://localhost/breaktalk/serve.html">关于我们</a></h3>
+					<p><a href="http://localhost/breaktalk/serve.html">了解面包物语</a></p>
 					<p><a href="###">面包物语新闻</a></p>
-					<p><a href="###">加入面包物语</a></p>
+					<p><a href="http://localhost/breaktalk/serve.html">加入面包物语</a></p>
 				</div>
 				<div id="four">
-					<h3><a href="###">联系我们</a></h3>
+					<h3><a href="http://localhost/breaktalk/serve.html">联系我们</a></h3>
 					<p><a href="###">官方微博</a></p>
 					<p><a href="###">物语社区</a></p>
 					
@@ -215,17 +217,15 @@
 	<div id="balance">
    		<div class="balance">
    			<h2>请核对您的订单：</h2>
-   			<p>商品数量：<span class="balance_count"></span></p>
+   			<p>总商品数量：<span class="balance_count"></span></p>
    			<p>合计金额：<span class="balance_money"></span></p>
    			<input type="button" value="返回" class="balance_back"/>	
    			<input type="button" value="确定" class="balance_sure"/>	
    		</div>	
     </div>
 	<script>
-		$(function(){		
-		console.log(location.href)
-		
-	});
+	 
+
 	</script>
 	</body>
 </html>

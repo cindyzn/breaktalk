@@ -47,6 +47,8 @@
       color: white;
       font-weight: bold;
       border: 1px solid lightgray; }
+    .container #user .form #normal #btn:hover {
+      cursor: pointer; }
     .container #user .form #normal .none {
       padding-left: 20px;
       line-height: 50px; }

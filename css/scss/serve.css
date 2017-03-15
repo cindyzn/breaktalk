@@ -1,0 +1,79 @@
+#container {
+  width: 100%;
+  height: auto; }
+
+.container {
+  width: 1170px;
+  min-height: 300px;
+  margin: 0 auto;
+  overflow: hidden; }
+
+.container #index {
+  margin-top: 20px; }
+
+.container .left {
+  float: left;
+  width: 180px;
+  margin-top: 30px; }
+
+.container .left h3 {
+  line-height: 40px;
+  text-align: center; }
+
+.left li {
+  line-height: 30px;
+  padding-left: 40px; }
+
+.left li:hover {
+  cursor: pointer; }
+
+.left .color {
+  color: #bc002d; }
+
+.container .right {
+  float: right;
+  width: 900px;
+  margin-top: 30px; }
+
+.container .right .hr {
+  font-size: 16px;
+  line-height: 15px;
+  border-left: 5px solid #bc002d;
+  padding-left: 10px;
+  padding-left: 10px;
+  margin: 10px 0; }
+
+.right div {
+  display: none; }
+
+.right .active {
+  display: block; }
+
+.container .right .culture h2 {
+  display: inline-block; }
+
+.container .right p {
+  line-height: 30px;
+  text-indent: 30px; }
+
+.container .input p {
+  padding: 10px 0; }
+  .container .input p i {
+    color: #bc002d; }
+  .container .input p textarea {
+    width: 400px;
+    height: auto; }
+  .container .input p .btn {
+    width: 100px;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+    background: #bc002d;
+    margin-left: 200px;
+    border-radius: 10px;
+    border: none; }
+  .container .input p span {
+    font-size: 12px;
+    font-style: italic; }
+
+/*# sourceMappingURL=serve.css.map */

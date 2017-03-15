@@ -6,14 +6,13 @@
 		<link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 		<link rel="stylesheet" href="css/scss/public.css" />
 		<link rel="stylesheet" href="css/scss/nav.css" />
-		<link rel="stylesheet" href="css/scss/nav.css" />
-		<link rel="stylesheet" href="css/scss/register.css" />
 		<link rel="stylesheet" href="css/scss/footer.css" />
+		<link rel="stylesheet" href="css/scss/goodscar1.css" />
 		<script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
 		<script type="text/javascript" src="js/js.js" ></script>
-		<script type="text/javascript" src="js/register.js" ></script>
-		
-		
+		<script type="text/javascript" src="js/goodscar1.js" ></script>
+		<script type="text/javascript" src="js/cookie.js" ></script>
+		<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"slide":{"type":"slide","bdImg":"4","bdPos":"left","bdTop":"100"}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
 	</head>
 	<body>
 				<!----------------------------------------nav 开始    ---------------------------------->
@@ -67,41 +66,109 @@
         			<a href="http://localhost/breaktalk/answer.html"><i class="fa fa-qq"></i></a>
 				</p>
         		
-        		 
+        		
 			</div>
 		</div>
 	</div>
 	<div id="trim" style="height:96px;width:1170px"></div>
 		
 	<!----------------------------------------nav 完成    ---------------------------------->
+		
 	<div id="container">
 		<div class="container">
-			<img src="img/bg1.jpg" id="img">
-			<div id="user">
-				<h2>用户注册</h2>
-				<form class="form" action="" name="form">
-					<input type="text" placeholder="请输入您的手机号" id="userName"/><i class="erro"></i>
-					<input type="password" placeholder="请输入6位数字验证码" id="telWord"/><i class="erro"></i>
-					<a href="###" id="get" >获取验证码</a>
-					<input type="password" placeholder="密码由6-12位数字字母或者下划线" id="userWord"/><i class="erro"></i>
-					<input type="password" placeholder="请再次输入密码" id="sureWord"/><i class="erro"></i>
-					<input type="button" id="btn" value="注册"/>
-					<span>温馨提示：</span>
-					<span>成功注册会员，登录后首次完善个人信息，即可获赠官网会员20积分</span>
-						
-					<div id="pass">
-						<p>请输入以下验证码</p>
-						<input type="text" class="pass" placeholder="验证码" /><a id="show" href="###">a1ce</a>
-						<input type="button" value="确认" id="sure" />
-					</div>
-					
-				</form>
+        	<div id="step">
+            	<div class="step1">我的购物车</div>
+                <div class="step2">填写核对订单信息</div>
+                <div class="step3">成功提交订单</div>
+            </div>
+            
+            
+            <h2 class="hr">我的购物车</h2><hr style="width:1170px;" />
+            <div id="table" >
+            	<table id="mycar"  width="1170px" height="auto">
+	            	<tr class="name">
+	            		<td class="name_text">商品名称</td>
+	            		<td>规格</td>
+	            		<td>数量</td>
+	            		<td>单价（元）</td>
+	            		<td>小计</td>
+	            		<td>操作</td>
+	            	</tr>
+	            	<tr class="size">
+	            		<td class="name_img">
+	            			<a href="cakedetails.html"><img src="img/forest.jpg" />
+	            				<span>（官网版）经典黑森林蛋糕</span> 
+	            			</a>
+	            		</td>
+	            		<td>Φ15cm</td>
+	            		<td class="math">
+	            			<input type="button" class="min" value="-"/>
+							<input type="text" class="opera" value="1"/>
+							<input type="button" class="max" value="+"/>
+	            		</td>
+	            		<td>
+	            			<p><span>￥</span><em class="em1">158</em><span>.00</span></p>
+	            		</td>
+	            		<td>
+	            			<p><span>￥</span><em class="em3">158</em><span>.00</span></p>
+	            		</td>
+	            		<td>
+	            			<span class="delete"><i class="fa fa-trash-o"></i></span>
+	            			<span class="collect"><i class="fa fa-heart-o"></i></span>
+	            		</td>
+	            	</tr>
+	            	<tr class="size">
+	            		<td class="name_img">
+	            			<a href="cakedetails.html"><img src="img/forest.jpg" />
+	            				<span>（官网版）经典黑森林蛋糕</span> 
+	            			</a>
+	            		</td>
+	            		<td>Φ15cm</td>
+	            		<td class="math">
+	            			<input type="button" class="min" value="-"/>
+							<input type="text" class="opera" value="1"/>
+							<input type="button" class="max" value="+"/>
+	            		</td>
+	            		<td>
+	            			<p><span>￥</span><em class="em1">158</em><span>.00</span></p>
+	            		</td>
+	            		<td>
+	            			<p><span>￥</span><em class="em3">158</em><span>.00</span></p>
+	            		</td>
+	            		<td>
+	            			<span class="delete"><i class="fa fa-trash-o"></i></span>
+	            			<span class="collect"><i class="fa fa-heart-o"></i></span>
+	            		</td>
+	            	</tr>
+            	</table>
+            </div>
+            
+            
+           
+	            	
+           
+            
+            <div id="sub">
+            	<div class="sub_left">
+            		<input type="button" value="继续购物" />
+            	</div>
+            	<div class="sub_right">
+            		<input type="button" value="结算" />
+            	</div>
+            </div>
+            
+   
+        	<div id="disallow_min">
+				<p>此商品最小购买数量为1</p>
+				<input type="button" class="sure" value="确定"/>
+			</div>
+			<div id="disallow_max">
+				<p>此商品最d大购买数量为199</p>
+				<input type="button" class="sure" value="确定"/>
 			</div>
 			
+		</div>
 	</div>
-
-	</div>
-	
 	<!---------------------------------------container 完成    ---------------------------------->
 	<div id="footer">
 		<div class="footer">
@@ -145,15 +212,20 @@
 		</div>
 	</div>
 	<!---------------------------------------footer 完成    ---------------------------------->
-	
-	
-	
-	
-	<script> 
-	
+	<div id="balance">
+   		<div class="balance">
+   			<h2>请核对您的订单：</h2>
+   			<p>商品数量：<span class="balance_count"></span></p>
+   			<p>合计金额：<span class="balance_money"></span></p>
+   			<input type="button" value="返回" class="balance_back"/>	
+   			<input type="button" value="确定" class="balance_sure"/>	
+   		</div>	
+    </div>
+	<script>
+		$(function(){		
+		console.log(location.href)
 		
-		
+	});
 	</script>
-	
 	</body>
 </html>

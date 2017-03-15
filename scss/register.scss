@@ -26,35 +26,49 @@
     }
     .form{
        
-        #userName,#userWord,#btn,#sureWord{
-            margin:10px 0px;
-            width:290px;
-            height:30px;
+        #userName,#userWord,#sureWord{
+            margin:15px 0px;
+            width:270px;
+            height:20px;
         }
        
        #telWord{
-           width:150px;
-           line-height:30px;
+           width:200px;
+           line-height:20px;
+           margin:15px 0;
        }
        #get{
            text-align: center;
-            line-height: 30px;
+            line-height: 20px;
             background:#bc002d;
             color:white;
-            margin-right:60px;
+             margin:15px 0;
+            margin-right:10px;
             float:right;
+            
+            
        }
         a:hover{
             text-decoration: underline;
             color:darkred;
            
         }
+        .erro{
+            font-size:10px;
+            color:#bc002d;
+            font-weight:bolder;
+        }
         #btn{
             background: #bc002d;
             color:white;
+            width:290px;
+            line-height: 30px;
             font-weight: bold;
             border:1px solid lightgray;
             
+        }
+        #btn:hover{
+            cursor: pointer;
         }
         
         span{

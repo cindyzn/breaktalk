@@ -20,29 +20,41 @@
   background: white;
   padding-left: 20px; }
   .container #user h2 {
-    line-height: 40px; }
-  .container #user .form #userName, .container #user .form #userWord, .container #user .form #btn, .container #user .form #sureWord {
-    margin: 10px 0px;
-    width: 290px;
-    height: 30px; }
+    line-height: 40px; 
+    }
+  .container #user .form #userName, .container #user .form #userWord, .container #user .form #sureWord {
+    margin: 15px 0px;
+    width: 270px;
+    height: 20px; }
   .container #user .form #telWord {
-    width: 150px;
-    line-height: 30px; }
+    width: 200px;
+    line-height: 20px;
+    margin: 15px 0; }
   .container #user .form #get {
     text-align: center;
-    line-height: 30px;
+    line-height: 20px;
     background: #bc002d;
     color: white;
-    margin-right: 60px;
-    float: right; }
+    margin: 15px 0;
+    margin-right: 10px;
+    float: right; 
+   }
   .container #user .form a:hover {
     text-decoration: underline;
     color: darkred; }
+  .container #user .form .erro {
+    font-size: 10px;
+    color: #bc002d;
+    font-weight: bolder; }
   .container #user .form #btn {
     background: #bc002d;
     color: white;
+    width: 290px;
+    line-height: 30px;
     font-weight: bold;
     border: 1px solid lightgray; }
+  .container #user .form #btn:hover {
+    cursor: pointer; }
   .container #user .form span {
     display: block;
     margin-left: 20px;

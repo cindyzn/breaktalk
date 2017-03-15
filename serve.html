@@ -6,11 +6,14 @@
 		<link href="//netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 		<link rel="stylesheet" href="css/scss/public.css" />
 		<link rel="stylesheet" href="css/scss/nav.css" />
-		<link rel="stylesheet" href="css/scss/cake.css" />
+		<link rel="stylesheet" href="css/scss/serve.css" />
 		<link rel="stylesheet" href="css/scss/footer.css" />
 		<script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
 		<script type="text/javascript" src="js/js.js" ></script>
-		<script type="text/javascript" src="js/scroll.js" ></script>
+		<script type="text/javascript" src="js/ajax.js" ></script>
+		<script type="text/javascript" src="js/serve.js" ></script>
+		<script type="text/javascript" src="js/cookie.js" ></script>
+		
 		<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"slide":{"type":"slide","bdImg":"4","bdPos":"left","bdTop":"100"}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
 	</head>
 	<body>
@@ -18,28 +21,28 @@
 	<div id="top">
 		<div class="top">
 			<div id="logo">
-				<a href="http://127.0.0.1:8020/breaktalk/homepage.html" name="" id="logimg"><img src="img/logo.jpg"></a>
+				<a href="http://localhost/breaktalk/homepage.html" name="" id="logimg"><img src="img/logo.jpg"></a>
 			</div>
 			<div class="seat" id="city-list">
    			<div id="city"><i class="fa fa-map-marker"></i>西安</div>        
     			<div id="area">
-                	<span><a href="http://127.0.0.1:8020/breaktalk/homepagecity.html" id="changeCity">北京</a></span>
+                	<span><a href="http://localhost/breaktalk/homepagecity.html" id="changeCity">北京</a></span>
                 	<span>西安</span>
            		</div>	
 			</div>
 			
 			<ul id="nav">
            		<li>
-       				<a href="http://127.0.0.1:8020/breaktalk/homepage.html">首页</a>
+       				<a href="http://localhost/breaktalk/homepage.html">首页</a>
            		</li>
         	    <li class="navlicake">
-            		<a href="">蛋糕</a>
+            		<a href="http://localhost/breaktalk/cake.html">蛋糕</a>
             	</li>
         	    <li>
             		<a href="http://www.wdmcake.cn/category-11.html">提货卡券</a>
            		</li>
         	    <li>
-            		<a href="http://127.0.0.1:8020/breaktalk/enter.html">会员中心</a>
+            		<a href="http://localhost/breaktalk/enter.html">会员中心</a>
             	</li>
         	    <li>
             		<a href="http://club.wdmcake.cn/forum.php" target="_blank">物语俱乐部</a>
@@ -51,18 +54,18 @@
             		<a href="http://www.wdmcake.cn/exchange.php" target="_blank">积分换礼</a>
             	</li>
         	    <li class="none">
-            		<a href="http://www.wdmcake.cn/about.php?id=53">企业服务</a>
+            		<a href="http://localhost/breaktalk/serve.html">企业服务</a>
             	</li>
 			</ul>
 			<div id="topRight">
 				<span>客服热线 4001-170-170</span>
 				<p>
-					<a href="http://127.0.0.1:8020/breaktalk/register.html">注册</a>
-        			<a href="http://127.0.0.1:8020/breaktalk/enter.html">登录</a>
-        			<a href="http://127.0.0.1:8020/breaktalk/goodscar.html" class="car"><i class="fa fa-shopping-cart"></i></a>
-        			<a href="http://127.0.0.1:8020/breaktalk/goodscar.html" id="count">0</a>
+					<a href="http://localhost/breaktalk/register.html" class="into">注册</a>
+        			<a href="http://localhost/breaktalk/enter.html" class="exit">登录</a>
+        			<a href="http://localhost/breaktalk/goodscar.html" class="car"><i class="fa fa-shopping-cart"></i></a>
+        			<a href="http://localhost/breaktalk/goodscar.html" id="count">0</a>
         			<a href="http://www.wdmcake.cn/help.php"><i class="fa fa-question-circle-o"></i></a>
-        			<a href="http://127.0.0.1:8020/breaktalk/answer.html"><i class="fa fa-qq"></i></a>
+        			<a href="http://localhost/breaktalk/answer.html"><i class="fa fa-qq"></i></a>
 				</p>
         		
         		 
@@ -76,24 +79,111 @@
 	<div id="container">
 		<div class="container">
 			<div id="index">
-				当前位置: <a href="http://127.0.0.1:8020/breaktalk/homepage.html">首页</a>&gt; 
+				当前位置: <a href="http://localhost/breaktalk/homepage.html">首页</a>&gt; 
 				<a href="###" style="color:darkred;font-weight: bold;">企业服务</a>
 			</div>
 			<ul class="left">
-				<h2>了解面包物语</h2>
-				<li class="active">联系面包物语</li>
+				<h3>了解面包物语</h3>
+				<li class="color">联系面包物语</li>
 				<li>企业服务</li>
 				<li>面包物语简介</li>
+				<li>面包物语工业园</li>
+				<li>面包物语文化</li>
+				<li>关于原料</li>
+				<li>面包物语未来</li>
+				
 			</ul>
 			<div class="right">
-				<div>
-					<h2 class="hr">联系面包物语</h2><hr style="width:1170px;" />
-					<p>北京味多美食品有限责任公司<br/>地址：北京市海淀区西直门北大街32号枫蓝国际中心B座7层<br/>  
-邮编：100082
-电话：4001-170-170</p>
+				<div class="active">
+					<h2 class="hr">联系面包物语</h2><hr style="width:900px;" />
+					<p>西安面包物语食品有限责任公司</p>
+					<p>地址：西安市雁塔区立人科技C座4层1609室</p>  
+					<p>	邮编：100082</p>
+					<p>电话：4001-170-170</p>
 				</div>
-				<div></div>
-				<div></div>
+				<div class="input">
+					<h2 class="hr">企业服务</h2><hr style="width:900px;" />
+					<p> 面包物语创立于1996年，是国内著名烘焙连锁食品品牌，主要经营中高端蛋糕、面包、咖啡、中西式点心、月饼、粽子等产品。数十年来，我们围绕客户的需求持续创新，与合作伙伴开放合作，在企业员工福利关怀、聚会庆典、商务活动定制、客户关系维护等方面为众多知名企业客户提供了优质的外包服务解决方案。
+      					作为中国烘焙行业引领者，长期以来，面包物语坚持以优质的服务、健康美味的产品，努力给消费者提供高品质的生活享受。与此同时，我们力争成为广大企业客户的第一选择和最佳合作伙伴，成为深受消费者钟爱的品牌。
+					</p> 
+					<img src="img/qyfw.jpg"/>
+					<from>
+						<p>
+							公司名称<input type="text" /><i>*</i><span>输入正确的公司全称</span>
+						</p>
+						<p>
+							公司地址：<select id="pro"><option>请选择省份</option></select>
+							<select id="cit"><option>请选择城市</option></select>
+							<select id="district"><option>请选择区县</option></select>
+							<i>*</i><span>公司地址不能为空</span>
+						</p>
+						<p>
+							详细地址：<input type="text" /><i>*</i><span>请输入详细的公司地址</span>
+						</p>
+						<p>
+							公司人数：<input type="text" /><i>*</i><span> 公司人数不能为空</span>
+						</p>
+						<p>
+							联系人姓名：<input type="text" /><i>*</i><span>   联系人姓名不能为空</span>
+						</p>
+						<p>
+							联系人手机：<input type="text" /><i>*</i><span>请输入正确的联系人手机号</span>
+						</p>
+						<p>
+							公司办公电话：<input type="text" /><i></i><span></span>
+						</p>
+						<p>
+							业务咨询内容：<textarea></textarea>
+						</p>
+						<p>
+							<input type="button" value="提交" class="btn">
+						</p>
+					</from>
+				</div>
+				<div>
+					<h2 class="hr">面包物语简介</h2><hr style="width:900px;" />
+					<p>  
+						西安面包物语食品有限责任公司创立于1996年，是国内著名烘焙连锁食品企业，初期主要经营产品包括蛋糕、面包、咖啡、中西式点心、月饼、粽子等，经过多年来不断的发展与成长，目前产品的种类已扩展至面包物语法式面包、饼干、老婆饼、蛋挞、芝士蛋糕、巧克力蛋糕、下午茶蛋糕、生日蛋糕、乳酪蛋糕以及婚礼蛋糕、商务庆典蛋糕。除了丰富多样的实体产品，更提供种类多样的面包物语网上订购、团购、面包物语福利卡、月饼卡、充值卡、提货卡，为广大消费者提供了多种消费选择。
+					</p>
+					<p>  
+						面包物语成立至今，在中国已创办了300余家直营连锁店，2010—2011年相继落户上海、河北保定、包头等地。面包物语在北京、上海、包头同时拥有现代化的中央工厂，集“生产”“配送”“销售”为一体，专业的品质管理制度，保证食品安全。
+       					面包物语品牌定位于中高端消费者，以丰富的、高品质的产品，平民化的价格，亲切友善的服务，便利的连锁店铺，赢得了消费者的青睐。
+  				</p>
+				</div>
+				<div>
+					<h2 class="hr">面包物语工业园</h2><hr style="width:900px;" />
+					<p> 面包物语中央工厂，坐落于西安市四大支柱产业之一，高新科技园区大兴生物医药产业基地内。是占地40亩，按国际标准建造的大型食品工业园。</p> 
+					<img src="img/gongyeyuan.jpg"/>
+				</div>
+				<div class="culture">
+					<h2 class="hr">面包物语工业园</h2><hr style="width:900px;" />
+					<h2>企业定位：</h2><span>中国烘焙行业引领者；</span><br /><br />
+					<h2>企业目标：</h2><span>打造国际一流食品连锁品牌；</span><br /><br />
+					<h2>品牌核心：</h2><span>自然健康、探索创新、极致美味；</span><br /><br />
+					<h2>企业经营宗旨：</h2><span>以优质的服务、健康美味的产品，给消费者高品质的生活享受；</span><br /><br />
+					<h2>品牌诉求：</h2><span>发现纯粹美味；</span><br /><br />
+					<h2>企业精神：</h2><span>认真、创新、团队、效率；</span><br /><br />
+					<h2>用人标准：</h2><span>认真的工作态度，诚信的品质，强烈的创新精神，与面包物语共同成长的事业心；</span><br /><br />
+					<h2>做事标准：</h2><span>追求完美；</span><br /><br />
+					<h2>核心竞争力 ：</h2><span>创新；</span><br /><br />
+					<h2>人的价值：</h2><span>创新能力的大小决定人的价值大小；</span><br /><br />
+					<h2>人际关系：</h2><span>尊重合作伙伴，成功依靠团队的力量。为自己的成绩自豪，为别人的成绩赞许；</span><br /><br />
+					<h2>领导与员工关系：</h2><span>领导是为员工服务的，为员工服务就是为顾客服务；</span><br /><br />
+					<h2>员工与企业关系：</h2><span>以企业为家，员工与企业利益一致，共同成长；</span><br /><br />
+					<h2>社会责任：</h2><span>提供安全、健康、美味的食品，为和谐社会做出自己的贡献。</span><br /><br />
+				</div>
+				<div>
+					<h2 class="hr">关于原料</h2><hr style="width:900px;" />
+					<p>  
+						 面包物语坚持选用天然乳脂奶油、新鲜鸡蛋、高品质阳光小麦等多种健康食材，正是由于这些健康食材的选用，成就了面包物语每一款产品的完美品质。 
+					</p>
+					<img src="img/stock.jpg"/>
+				</div>
+				<div>
+					<h2 class="hr">面包物语未来</h2><hr style="width:900px;" />
+					<p>  
+						现今北京面包物语食品有限责任公司正以每年20-30%的速度向全国快速扩张，到2018年连锁店数量将达到900家。届时面包物语将立足于全国市场，以创新的观念，结合各地的饮食特点，将让全国各地更多的消费者品味到面包物语的烘焙美食与创意激情。每一个美味旋律从世界各地采撷来的多种健康原料，用创意的心和精湛的技术，将世界各地的美好 汇聚在你的舌尖。面包物语，发现纯粹美味！</p>
+				</div>
 			</div>
 			
 			
@@ -116,13 +206,13 @@
 					<p><a href="###">提货卡/积分卡查询</a></p>
 				</div>
 				<div id="three">
-					<h3><a href="###">关于我们</a></h3>
-					<p><a href="###">了解面包物语</a></p>
+					<h3><a href="http://localhost/breaktalk/serve.html">关于我们</a></h3>
+					<p><a href="http://localhost/breaktalk/serve.html">了解面包物语</a></p>
 					<p><a href="###">面包物语新闻</a></p>
-					<p><a href="###">加入面包物语</a></p>
+					<p><a href="http://localhost/breaktalk/serve.html">加入面包物语</a></p>
 				</div>
 				<div id="four">
-					<h3><a href="###">联系我们</a></h3>
+					<h3><a href="http://localhost/breaktalk/serve.html">联系我们</a></h3>
 					<p><a href="###">官方微博</a></p>
 					<p><a href="###">物语社区</a></p>
 					
@@ -144,10 +234,11 @@
 	<!---------------------------------------footer 完成    ---------------------------------->
 	
 	<script>
-		$(function(){
-			console.log(location.href)
-		})
 	
+	$(function(){
+		console.log(location.href)
+		
+   	})
 	</script>
 	
 	</body>

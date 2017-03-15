@@ -10,34 +10,36 @@
 		<link rel="stylesheet" href="css/scss/footer.css" />
 		<script type="text/javascript" src="js/jquery-1.8.3.min.js" ></script>
 		<script type="text/javascript" src="js/js.js" ></script>
+		<script type="text/javascript" src="js/enter.js" ></script>
+		
 	</head>
 	<body>
 				<!----------------------------------------nav 开始    ---------------------------------->
 	<div id="top">
 		<div class="top">
 			<div id="logo">
-				<a href="http://127.0.0.1:8020/breaktalk/homepage.html" name="" id="logimg"><img src="img/logo.jpg"></a>
+				<a href="http://localhost/breaktalk/homepage.html" name="" id="logimg"><img src="img/logo.jpg"></a>
 			</div>
 			<div class="seat" id="city-list">
    			<div id="city"><i class="fa fa-map-marker"></i>西安</div>        
     			<div id="area">
-                	<span><a href="http://127.0.0.1:8020/breaktalk/homepagecity.html" id="changeCity">北京</a></span>
+                	<span><a href="http://localhost/breaktalk/homepagecity.html" id="changeCity">北京</a></span>
                 	<span>西安</span>
            		</div>	
 			</div>
 			
 			<ul id="nav">
            		<li>
-       				<a href="http://127.0.0.1:8020/breaktalk/homepage.html">首页</a>
+       				<a href="http://localhost/breaktalk/homepage.html">首页</a>
            		</li>
         	    <li class="navlicake">
-            		<a href="http://127.0.0.1:8020/breaktalk/cake.html">蛋糕</a>
+            		<a href="http://localhost/breaktalk/cake.html">蛋糕</a>
             	</li>
         	    <li>
             		<a href="http://www.wdmcake.cn/category-11.html">提货卡券</a>
            		</li>
         	    <li>
-            		<a href="http://127.0.0.1:8020/breaktalk/enter.html">会员中心</a>
+            		<a href="http://localhost/breaktalk/enter.html">会员中心</a>
             	</li>
         	    <li>
             		<a href="http://club.wdmcake.cn/forum.php" target="_blank">物语俱乐部</a>
@@ -49,18 +51,18 @@
             		<a href="http://www.wdmcake.cn/exchange.php" target="_blank">积分换礼</a>
             	</li>
         	    <li class="none">
-            		<a href="http://www.wdmcake.cn/about.php?id=53">企业服务</a>
+            		<a href="http://localhost/breaktalk/serve.html">企业服务</a>
             	</li>
 			</ul>
 			<div id="topRight">
 				<span>客服热线 4001-170-170</span>
 				<p>
-					<a href="http://127.0.0.1:8020/breaktalk/register.html">注册</a>
-        			<a href="http://127.0.0.1:8020/breaktalk/enter.html">登录</a>
-        			<a href="http://127.0.0.1:8020/breaktalk/goodscar.html" class="car"><i class="fa fa-shopping-cart"></i></a>
-        			<a href="http://127.0.0.1:8020/breaktalk/goodscar.html" id="count">0</a>
+					<a href="http://localhost/breaktalk/register.html">注册</a>
+        			<a href="http://localhost/breaktalk/enter.html" class="exit">登录</a>
+        			<a href="http://localhost/breaktalk/goodscar.html" class="car"><i class="fa fa-shopping-cart"></i></a>
+        			<a href="http://localhost/breaktalk/goodscar.html" id="count">0</a>
         			<a href="http://www.wdmcake.cn/help.php"><i class="fa fa-question-circle-o"></i></a>
-        			<a href="http://127.0.0.1:8020/breaktalk/answer.html"><i class="fa fa-qq"></i></a>
+        			<a href="http://localhost/breaktalk/answer.html"><i class="fa fa-qq"></i></a>
 				</p>
         		
         		 
@@ -83,10 +85,10 @@
 						<li id="normal">
 							<input type="text" placeholder="用户名/手机/邮箱" id="userName"/>
 							<input type="password" placeholder="输入密码" id="userWord"/>
-							<input type="checkbox" checked="checked" id="chk" />7天内自动登录	
+							<input type="checkbox"  id="chk" />7天内自动登录	
 							<a href="###" id="forget">忘记密码?</a>
 							<input type="button" id="btn" value="登录"/>
-							<a href="http://127.0.0.1:8020/breaktalk/register.html" class="none" >没有账号，立即注册</a>
+							<a href="http://localhost/breaktalk/register.html" class="none" >没有账号，立即注册</a>
 							<span>温馨提示：</span>
 							<span>成功注册会员，登录后首次完善个人信息，即可获赠官网会员20积分</span>
 						</li>
@@ -128,13 +130,13 @@
 					<p><a href="###">提货卡/积分卡查询</a></p>
 				</div>
 				<div id="three">
-					<h3><a href="###">关于我们</a></h3>
-					<p><a href="###">了解面包物语</a></p>
+					<h3><a href="http://localhost/breaktalk/serve.html">关于我们</a></h3>
+					<p><a href="http://localhost/breaktalk/serve.html">了解面包物语</a></p>
 					<p><a href="###">面包物语新闻</a></p>
-					<p><a href="###">加入面包物语</a></p>
+					<p><a href="http://localhost/breaktalk/serve.html">加入面包物语</a></p>
 				</div>
 				<div id="four">
-					<h3><a href="###">联系我们</a></h3>
+					<h3><a href="http://localhost/breaktalk/serve.html">联系我们</a></h3>
 					<p><a href="###">官方微博</a></p>
 					<p><a href="###">物语社区</a></p>
 					
@@ -163,6 +165,7 @@
 		$(function(){
 			/*。。。。。。。。。。。。。本页面地址。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。。*/  
 			console.log(location.href)
+	
 		})
 	
 		

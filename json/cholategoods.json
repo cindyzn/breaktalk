@@ -1,0 +1,40 @@
+[
+	
+	{ 
+		"goodsId":"01001",
+		"goodsName":"（官网版）经典黑森林蛋糕 Black Forest" ,
+		"goodsType":"Φ10cm",
+		"goodsPrice":" ￥ 39" ,
+		"goodsPrvPrice":"原价：￥50.00",
+		"goodsCount":"0",
+		"goodsDesc":"/选用法国或英国天然稀奶油，高脂可可粉、酒渍樱桃层层融合。/" ,
+		"goodsTip":"订购提示：此商品（3月4-3月8日）在线支付预定（3月6日-3月8日）到店自提。",
+		"goodsImg":"img/forest.jpg",
+		"goodsMessage":"http://localhost/breaktalk/cakedetails.html"
+	},
+	
+	{ 
+		"goodsId":"01002",
+		"goodsName":"（官网版）森林狂想曲蛋糕 Chocolate Cherry",
+		"goodsType":"Φ30cm",
+		"goodsPrice":"￥198" ,
+		"goodsPrvPrice":"原价",
+		"goodsCount":"0",
+		"goodsDesc":"/多种水果的搭配，简单时尚的“裸”蛋糕。/" ,
+		"goodsTip":" ",
+		"goodsImg":"img/cherry.jpg",
+		"goodsMessage":""
+	},
+	{ 
+		"goodsId":"01003",
+		"goodsName":"（（官网版）女王巧克力蛋糕 Queen Chocolate",
+		"goodsType":"Φ30cm",
+		"goodsPrice":"￥258" ,
+		"goodsPrvPrice":"原价：￥288.00",
+		"goodsCount":"0",
+		"goodsDesc":"/女王巧克力蛋糕是法国人钟爱的蛋糕之一，造型灵感源自女王皇冠。据传为皇室专用的巧克力蛋糕，原法国总理府西点大师J-Marc Bernelin 于2015年将它带到味多美。/" ,
+		"goodsTip":"订购提示：此商品（3月4-3月8日）在线支付预定（3月6日-3月8日）到店自提。",
+		"goodsImg":"img/queen.jpg",
+		"goodsMessage":""
+	}
+]
